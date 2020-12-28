@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { useInterval } from './hooks/useInterval';
-//import {useInterval} from '.hooks';
 //import {ClockBase, Center, SecondHand, MinuteHand, HourHand } from './components';
 
 function App() {
