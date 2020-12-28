@@ -10,11 +10,11 @@ const BaseHand = styled.div`
 
 export const ClockBase = styled.div`
   position: relative;
-  border: 10px solid orange;
+  border: 5px solid black;
   width: 50vw;
   height: 50vw;
   margin: 0 auto;
-  background-color: black;
+  background-color: cyan;
   border-radius: 100%;
   @media only screen and (orientation : landscape) {
     width: 50vh;
@@ -30,18 +30,18 @@ export const Center = styled.div`
   width: 12px;
   height: 12px;
   border: 2px solid #fff;
-  background-color: orange;
+  background-color: black;
   border-radius: 100%;
   z-index: 100;
 `
 
 export const SecondHand = styled(BaseHand)`
   left: 40%;
-  outline: 2px solid orange;
+  outline: 2px solid red;
   width: 59%;
   transform-origin: 17%;
   transform: rotate(${props => getAngle(props.fraction)}deg);
-  transition: ${props => props.fraction > 0 ? 'transform 250ms ease-in-out' : 'none'}
+  transition: ${props => props.fraction > 0 ? 'transform 1000ms ease-in-out' : 'none'}
 `
 
 export const MinuteHand = styled(BaseHand)`
