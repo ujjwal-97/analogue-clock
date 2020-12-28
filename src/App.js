@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { useInterval } from './hooks/useInterval';
-//import {ClockBase, Center, SecondHand, MinuteHand, HourHand } from './components';
+import {ClockBase, Center, SecondHand, MinuteHand, HourHand } from './components';
 
 function App() {
   const date= new Date();
