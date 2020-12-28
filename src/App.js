@@ -15,12 +15,15 @@ function App() {
   }, 1000)
 
   return (
-    <ClockBase>
-      <Center/>
-      <SecondHand fraction={seconds}/>
-      <MinuteHand fraction={minutes}/>
-      <HourHand fraction={hours}/>
-    </ClockBase>
+    <div>
+      <ClockBase>
+        <Center/>
+        <SecondHand fraction={seconds}/>
+        <MinuteHand fraction={minutes}/>
+        <HourHand fraction={hours}/>
+      </ClockBase>
+      <div className="digital"> {hours}:{minutes}:{seconds}</div>
+    </div>
   );
 }
 
