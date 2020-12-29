@@ -22,7 +22,7 @@ function App() {
         <MinuteHand fraction={minutes}/>
         <HourHand fraction={hours}/>
       </ClockBase>
-      <div className="digital"> {hours}:{minutes}:{seconds}</div>
+      <div className="digital"> {`0${hours % 12}`.slice(-2)}:{`0${minutes % 60}`.slice(-2)}:{`0${seconds % 60}`.slice(-2)}</div>
     </div>
   );
 }
